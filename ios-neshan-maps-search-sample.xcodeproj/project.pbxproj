@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2CD313D9B38EA76E1752D3 /* Pods_ios_neshan_maps_search_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD1065E8C0EA2DEC3A36D49 /* Pods_ios_neshan_maps_search_sample.framework */; };
 		6F6E4A0621CF53D100F6DB92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E4A0521CF53D100F6DB92 /* AppDelegate.swift */; };
 		6F6E4A0821CF53D100F6DB92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E4A0721CF53D100F6DB92 /* ViewController.swift */; };
 		6F6E4A0B21CF53D100F6DB92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E4A0921CF53D100F6DB92 /* Main.storyboard */; };
 		6F6E4A0D21CF53D200F6DB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E4A0C21CF53D200F6DB92 /* Assets.xcassets */; };
 		6F6E4A1021CF53D200F6DB92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E4A0E21CF53D200F6DB92 /* LaunchScreen.storyboard */; };
+		6F6E4A1C21CF562A00F6DB92 /* NeshanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E4A1A21CF562900F6DB92 /* NeshanHelper.m */; };
+		6F8E930B21D0CB2200AA0CA9 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8E930A21D0CB2200AA0CA9 /* SearchViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		349410685154D6693B073737 /* Pods-ios-neshan-maps-search-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-neshan-maps-search-sample.debug.xcconfig"; path = "Target Support Files/Pods-ios-neshan-maps-search-sample/Pods-ios-neshan-maps-search-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		6F6E4A0221CF53D100F6DB92 /* ios-neshan-maps-search-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-neshan-maps-search-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6E4A0521CF53D100F6DB92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F6E4A0721CF53D100F6DB92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,12 @@
 		6F6E4A0C21CF53D200F6DB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F6E4A0F21CF53D200F6DB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F6E4A1121CF53D200F6DB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6E4A1821CF55F700F6DB92 /* ios-neshan-maps-search-sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-neshan-maps-search-sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F6E4A1A21CF562900F6DB92 /* NeshanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeshanHelper.m; sourceTree = "<group>"; };
+		6F6E4A1B21CF562900F6DB92 /* NeshanHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeshanHelper.h; sourceTree = "<group>"; };
+		6F8E930A21D0CB2200AA0CA9 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		8CD1065E8C0EA2DEC3A36D49 /* Pods_ios_neshan_maps_search_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_neshan_maps_search_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE19E36EDEA779E30549F4DB /* Pods-ios-neshan-maps-search-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-neshan-maps-search-sample.release.xcconfig"; path = "Target Support Files/Pods-ios-neshan-maps-search-sample/Pods-ios-neshan-maps-search-sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2CD313D9B38EA76E1752D3 /* Pods_ios_neshan_maps_search_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A76F0D3F99D5F02864F7CBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				349410685154D6693B073737 /* Pods-ios-neshan-maps-search-sample.debug.xcconfig */,
+				BE19E36EDEA779E30549F4DB /* Pods-ios-neshan-maps-search-sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		63C38ADABE73A8717C38B7B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CD1065E8C0EA2DEC3A36D49 /* Pods_ios_neshan_maps_search_sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F6E49F921CF53D100F6DB92 = {
 			isa = PBXGroup;
 			children = (
 				6F6E4A0421CF53D100F6DB92 /* ios-neshan-maps-search-sample */,
 				6F6E4A0321CF53D100F6DB92 /* Products */,
+				4A76F0D3F99D5F02864F7CBD /* Pods */,
+				63C38ADABE73A8717C38B7B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +84,16 @@
 		6F6E4A0421CF53D100F6DB92 /* ios-neshan-maps-search-sample */ = {
 			isa = PBXGroup;
 			children = (
+				6F6E4A1B21CF562900F6DB92 /* NeshanHelper.h */,
+				6F6E4A1A21CF562900F6DB92 /* NeshanHelper.m */,
 				6F6E4A0521CF53D100F6DB92 /* AppDelegate.swift */,
 				6F6E4A0721CF53D100F6DB92 /* ViewController.swift */,
+				6F8E930A21D0CB2200AA0CA9 /* SearchViewCell.swift */,
 				6F6E4A0921CF53D100F6DB92 /* Main.storyboard */,
 				6F6E4A0C21CF53D200F6DB92 /* Assets.xcassets */,
 				6F6E4A0E21CF53D200F6DB92 /* LaunchScreen.storyboard */,
 				6F6E4A1121CF53D200F6DB92 /* Info.plist */,
+				6F6E4A1821CF55F700F6DB92 /* ios-neshan-maps-search-sample-Bridging-Header.h */,
 			);
 			path = "ios-neshan-maps-search-sample";
 			sourceTree = "<group>";
@@ -71,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F6E4A1421CF53D200F6DB92 /* Build configuration list for PBXNativeTarget "ios-neshan-maps-search-sample" */;
 			buildPhases = (
+				AA2F67861746A026AD7B1E82 /* [CP] Check Pods Manifest.lock */,
 				6F6E49FE21CF53D100F6DB92 /* Sources */,
 				6F6E49FF21CF53D100F6DB92 /* Frameworks */,
 				6F6E4A0021CF53D100F6DB92 /* Resources */,
+				9E04A2B5C68A7942F769B250 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +132,7 @@
 				TargetAttributes = {
 					6F6E4A0121CF53D100F6DB92 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,11 +167,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E04A2B5C68A7942F769B250 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-neshan-maps-search-sample/Pods-ios-neshan-maps-search-sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-neshan-maps-search-sample/Pods-ios-neshan-maps-search-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2F67861746A026AD7B1E82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-neshan-maps-search-sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F6E49FE21CF53D100F6DB92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8E930B21D0CB2200AA0CA9 /* SearchViewCell.swift in Sources */,
+				6F6E4A1C21CF562A00F6DB92 /* NeshanHelper.m in Sources */,
 				6F6E4A0821CF53D100F6DB92 /* ViewController.swift in Sources */,
 				6F6E4A0621CF53D100F6DB92 /* AppDelegate.swift in Sources */,
 			);
@@ -280,8 +366,10 @@
 		};
 		6F6E4A1521CF53D200F6DB92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349410685154D6693B073737 /* Pods-ios-neshan-maps-search-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6URE3UAR5H;
 				INFOPLIST_FILE = "ios-neshan-maps-search-sample/Info.plist";
@@ -291,6 +379,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.neshan.rajman.ios-neshan-maps-search-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-neshan-maps-search-sample/ios-neshan-maps-search-sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +388,10 @@
 		};
 		6F6E4A1621CF53D200F6DB92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE19E36EDEA779E30549F4DB /* Pods-ios-neshan-maps-search-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6URE3UAR5H;
 				INFOPLIST_FILE = "ios-neshan-maps-search-sample/Info.plist";
@@ -309,6 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.neshan.rajman.ios-neshan-maps-search-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-neshan-maps-search-sample/ios-neshan-maps-search-sample-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
